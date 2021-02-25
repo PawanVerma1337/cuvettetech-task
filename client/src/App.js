@@ -20,7 +20,7 @@ function App() {
 
   useEffect(() => {
     console.log('fetching')
-    let url = "http://localhost:5000/api/v1/users?"
+    let url = "/api/v1/users?"
     if(search.skills)
      search.skills.forEach(ele => url+=`skills=${ele}&`)
     if(search.month)
@@ -43,7 +43,7 @@ function App() {
     setOffset(prevData => prevData + 8);
     console.log('fetching more')
 
-    let url = "http://localhost:5000/api/v1/users?"
+    let url = "/api/v1/users?"
     if(search.skills)
      search.skills.forEach(ele => url+=`skills=${ele}&`)
     if(search.month !== 0)
